@@ -19,8 +19,8 @@ function App() {
     setCount(0)
   };
 
-
   const [counterEndPoint,setCounterEndPoint]= useState(120)
+
 
 
   return (
@@ -32,30 +32,30 @@ function App() {
       </div>
 
       <div className='countbasic'>
-        <button onClick={()=>setCount(count-Number(userIncreaseDecreaseValue))}>Decrease</button>
-        <button onClick={()=>setCount(0)}>Reset</button>
-        <button onClick={()=>setCount(count+Number(userIncreaseDecreaseValue))}>Increase</button><br /><br />
+        <button className='btn decrease' onClick={()=>setCount(count-Number(userIncreaseDecreaseValue))}>Decrease</button>
+        <button className='btn reset' onClick={()=>setCount(0)}>Reset</button>
+        <button className='btn increase' onClick={()=>setCount(count+Number(userIncreaseDecreaseValue))}>Increase</button><br /><br />
       </div>
       
-      <input placeholder='Type Your Increase/Decrease Value' onChange={(e)=>setUserIncreaseDecreaseValue(e.target.value)} /><br /><br />
+      <input className='userinput' placeholder='Type Your Increase/Decrease Value' onChange={(e)=>setUserIncreaseDecreaseValue(e.target.value)} /><br /><br />
 
       <div className='defultIncDecValues'>
         {incrementsAndDecrements.map((value,index)=>{
           //The map function returns a value and  an index then we can assing them as key property and value variable
-          return <button key={index} onClick={()=>setCount(count + value)}>{value}</button> 
+          return <button className='orderednumbers' id='orderednumbers' key={index} onClick={()=>setCount(count + value)}>{value}</button> 
         })} <br /><br />
       </div>
 
       <div className='endPoint'>
-        <input placeholder='Where should the counter end?' onChange={(event)=>setCounterEndPoint(event.target.value)} /> <br />
+        <input className='endpointinput' placeholder='Where should the counter end?' onChange={(event)=>setCounterEndPoint(event.target.value)} /> <br />
         <label>Counter stops at {counterEndPoint} as default</label> 
         <br /><br />
       </div>
         
       
       <div className='autoCount'>
-        <button onClick={handleAutoCount}>Start Auto Count</button>
-        <button onClick={handleStopCount}>Stop Auto Count</button>
+        <button className='startstop' onClick={handleAutoCount}>Start Auto Count</button>
+        <button className='startstop' onClick={handleStopCount}>Stop Auto Count</button>
       </div>
       
     </div>

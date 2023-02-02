@@ -1,4 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500;1,700&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .App {
   text-align: center;
+  background-color: rgba(127, 183, 117, 0.788);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
 }
 
+.title{
+  color: rgb(240, 84, 84);
+  font-size: 44px;
+}
+.digitalcounter{
+  color: rgb(103, 34, 250);
+  font-family: 'Chakra Petch', sans-serif;
+}
+.btn{
+  padding: 15px;
+  margin-left: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+.btn.decrease{
+  background-color: rgb(228, 105, 105);
+}
+.btn.reset{
+  background-color: rgb(248, 248, 102);
+}
+.btn.increase{
+  background-color: rgba(90, 224, 90, 0.78);
+}
+.userinput{
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 10px;
+  text-align: center ;
+  font-weight: bold;
+  border-radius: 16px;
+  ransition: transform 0.3s ease-in-out;
+  background-color: rgb(233, 227, 227);
+}
+.userinput:hover{
+  transform: rotateX(30deg)
+}
+#orderednumbers{
+  padding: 8px;
+  border-bottom: 1px solid;
+  background-color: rgb(220, 241, 206);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+#orderednumbers:hover{
+  transform: scale(1.2);
+}
+.endPoint{
+  padding: 15px;
+
+}
+.endpointinput{
+  padding: 15px;
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+  background-color: rgb(233, 227, 227);
+}
+.endpointinput:hover{
+  transform: rotateX(30deg)
+}
+.autoCount{
+  padding: 15px
+}
+.startstop{
+  padding: 15px;
+  border-radius: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.startstop:hover{
+  transform: scale(1.2);
+}
